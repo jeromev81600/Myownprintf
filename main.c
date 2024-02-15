@@ -17,6 +17,7 @@ void ft_printf(char *fmt, ...) {
 
     char *s;
     int i;
+    double f;
     char *str;
     int a = 0;
 
@@ -38,6 +39,9 @@ void ft_printf(char *fmt, ...) {
         } else if (fmt[a] == 's') {
             s = va_arg(arg, char *);
             ft_putstr(s);
+        } else if (fmt[a] == 'f') {
+            f = va_arg(arg, double); // Utilisez va_arg pour récupérer l'argument de type double
+            printf("%f", f);
         }
         a++;
     }
@@ -47,6 +51,6 @@ void ft_printf(char *fmt, ...) {
 // Fonction main pour tester ft_printf
 int main() {
 float temp_ext=19.564;
-    ft_printf("Voici mon %der printf réalisé dans le cadre de \nmon entretien avec la %s .\n Float: %0.2f \n", 1, "Holberton school de Toulouse", temp_ext);
+    ft_printf("Bonjour, il fait %f degrés, j'ai créé mon %der printf \n dans le cadre de mon entretien avec la %s .\n", temp_ext, 1, "Holberton school de Toulouse");
     return 0;
 }
