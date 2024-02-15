@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1708015825 source:/home/jerome/Documents/Developpement/Myownprintf/Myownprintf/main.c
+	<stdarg.h>
+	<stdio.h>
+
+1708017289 source:/home/jerome/Documents/Developpement/Myownprintf/main.c
+	<stdarg.h>
+	<stdio.h>
+
